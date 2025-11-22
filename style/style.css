@@ -1,0 +1,316 @@
+/* Estilos gerais do corpo da página */
+body {
+    background-color: rgb(255, 255, 255); /* Define o fundo da página como branco */
+    color: black; /* Define a cor padrão do texto como preto */
+    margin: 0 auto; /* Remove margens padrão e centraliza o conteúdo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes */
+}
+
+/* Estilos do cabeçalho da página */
+header {
+    display: flex; /* Transforma o header em um container flexível */
+    flex-direction: row; /* Organiza os itens em linha horizontal */
+    justify-content: space-between; /* Distribui o espaço entre logo e menu */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    border-bottom: solid 1px rgb(200, 200, 200); /* Adiciona borda inferior cinza */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Cria sombra suave abaixo do header */
+}
+
+/* Estilos do título da logo */
+.logo h1 {
+    font-size: 36px; /* Define o tamanho da fonte como 36 pixels */
+    padding-left: 160px; /* Adiciona espaço interno à esquerda */
+}
+
+/* Estilos dos links da logo */
+.logo a {
+    color: rgb(0, 108, 75); /* Define a cor do link como verde */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Efeito ao passar o mouse sobre o link da logo */
+.logo a:hover {
+    color: rgb(178, 179, 174); /* Muda a cor para cinza quando o mouse passa por cima */
+    transition: 0.4s all; /* Cria transição suave de 0.4 segundos para todas as propriedades */
+}
+
+/* Estilos da lista do menu de navegação */
+.nav-menu ul {
+    display: flex; /* Transforma a lista em container flexível */
+    flex-direction: row; /* Organiza os itens da lista em linha horizontal */
+    padding: 0 160px; /* Adiciona espaço interno nas laterais */
+}
+
+/* Estilos dos itens individuais da lista */
+.nav-menu ul li {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    margin: 0 40px; /* Adiciona margem lateral de 40px em cada item */
+    padding-right: 40px; /* Adiciona espaço interno à direita de cada item */
+}
+
+/* Estilos dos links do menu de navegação */
+.nav-menu ul li a {
+    color: black; /* Define a cor dos links como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 22px; /* Define o tamanho da fonte como 22 pixels */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.nav-menu a:hover {
+    color: rgb(178, 179, 174); /* Muda a cor do link para cinza ao passar o mouse */
+    transition: 0.4s all; /* Cria transição suave de 0.4 segundos */
+}
+
+
+
+/* Estilos da seção inicial da página */
+#inicio {
+    display: flex; /* Transforma a seção em container flexível */
+    flex-direction: row; /* Organiza os elementos em linha horizontal */
+    margin-top: 50px; /* Adiciona margem superior de 50px */
+    padding: 0 200px; /* Adiciona espaço interno lateral de 200px */
+}
+
+/* Estilos da div com o texto principal */
+.texto-principal {
+    width: 50%; /* Define a largura como 50% do container pai */
+    display: flex; /* Transforma em container flexível */
+    flex-direction: column; /* Organiza os elementos em coluna vertical */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 100%; /* Define largura máxima como 100% */
+}
+
+/* Estilos dos parágrafos dentro do texto principal */
+.texto-principal p {
+    font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+    max-width: 90%; /* Limita a largura máxima a 90% do container */
+}
+
+/* Estilos do título h1 dentro do texto principal */
+.texto-principal h1 {
+    font-size: 54px; /* Define o tamanho da fonte como 54 pixels */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+}
+
+/* Estilos do span dentro do h1 (texto destacado) */
+.texto-principal h1 span {
+    color: rgb(178, 179, 174); /* Define a cor do texto destacado como cinza */
+}
+
+/* Estilos da div que contém a imagem de perfil */
+.img-perfil {
+    width: 50%; /* Define a largura como 50% do container pai */
+    display: flex; /* Transforma em container flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Estilos da imagem de perfil */
+.img-perfil img {
+    width: 850px; /* Define a largura da imagem como 850 pixels */
+}
+
+/* Estilos do container dos botões da página inicial */
+.home-botoes {
+    display: flex; /* Transforma em container flexível */
+    flex-direction: row; /* Organiza os botões em linha horizontal */
+    margin: 40px 0 30px 0; /* Adiciona margem: 40px acima, 0 laterais, 30px abaixo */
+    gap: 60px; /* Cria espaçamento de 60px entre os botões */
+}
+
+/* Estilos gerais dos links que funcionam como botões */
+.home-botoes a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 20px 40px; /* Adiciona espaço interno: 20px vertical, 40px horizontal */
+    border-radius: 30px; /* Cria bordas arredondadas com raio de 30px */
+    background-color: rgb(0, 108, 75); /* Define cor de fundo verde */
+    font-size: 22px; /* Define tamanho da fonte como 22 pixels */
+    font-weight: bold; /* Define texto em negrito */
+}
+
+/* Estilos do botão secundário (outline) */
+.btn-secondary {
+    background-color: transparent !important; /* Remove o fundo (transparente) - !important força esta propriedade */
+    border: 2px solid rgb(0, 108, 75); /* Adiciona borda sólida verde de 2px */
+    color: black; /* Define cor do texto como preto */
+}
+
+/* Efeito hover do botão secundário */
+.btn-secondary:hover {
+    border: 2px solid rgb(114, 62, 36); /* Muda a cor da borda para marrom ao passar o mouse */
+    color: rgb(114, 62, 36); /* Muda a cor do texto para marrom ao passar o mouse */
+    transition: 0.4s all; /* Cria transição suave de 0.4 segundos para todas as propriedades */
+}
+
+/* Estilos do botão primário (preenchido) */
+.btn-primary {
+    background-color: rgb(0, 108, 75); /* Define cor de fundo verde */
+    color: white; /* Define cor do texto como branco */
+}
+
+/* Efeito hover do botão primário */
+.btn-primary:hover {
+    background-color: rgb(114, 62, 36); /* Muda a cor de fundo para marrom ao passar o mouse */
+    transition: 0.4s all; /* Cria transição suave de 0.4 segundos para todas as propriedades */
+}
+
+
+/* Estilos da seção "Sobre" */
+#sobre {
+    display: flex; /* Transforma em container flexível */
+    max-width: 100%; /* Define largura máxima como 100% */
+    justify-content: space-between; /* Distribui espaço igualmente entre os elementos */
+    margin-top: 80px; /* Adiciona margem superior de 80px */
+    background-color: rgb(178, 179, 174); /* Define cor de fundo cinza */
+    padding: 40px 0; /* Adiciona espaço interno: 40px vertical, 0 horizontal */
+}
+
+/* Estilos da div com texto da seção sobre */
+.texto-sobre {
+    max-width: 50%; /* Limita a largura máxima a 50% do container pai */
+    padding: 0 200px 0 0; /* Adiciona espaço interno: 0 acima, 200px direita, 0 abaixo, 0 esquerda */
+}
+
+/* Estilos do título h3 da seção sobre */
+.texto-sobre h3 {
+    font-size: 42px; /* Define tamanho da fonte como 42 pixels */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+    color: black; /* Define cor do texto como preto */
+}
+
+/* Estilos dos parágrafos da seção sobre */
+.texto-sobre p {
+    font-size: 22px; /* Define tamanho da fonte como 22 pixels */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+}
+
+/* Estilos do span (texto destacado) na seção sobre */
+.texto-sobre span {
+    color: rgb(114, 62, 36); /* Define cor do texto destacado como marrom */
+}
+
+/* Estilos da div que contém a imagem da seção sobre */
+.img-sobre {
+    width: 50%; /* Define largura como 50% do container pai */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: flex-start; /* Alinha verticalmente ao topo */
+}
+
+/* Estilos da imagem da seção sobre */
+.img-sobre img {
+   width: 800px; /* Define largura da imagem como 800 pixels */
+}
+
+/* Estilos da seção de contato */
+#contato {
+    display: flex; /* Transforma em container flexível */
+    flex-direction: row; /* Organiza elementos em linha horizontal */
+    align-items: flex-start; /* Alinha verticalmente ao topo */
+    margin-top: 50px; /* Adiciona margem superior de 50px */
+    padding: 60px 120px; /* Adiciona espaço interno: 60px vertical, 120px horizontal */
+    max-width: 100%; /* Define largura máxima como 100% */
+    gap: 60px; /* Cria espaçamento de 60px entre os elementos */
+}
+
+/* Estilos da div com informações de contato */
+.contato-info {
+    flex: 1; /* Permite que o elemento cresça e ocupe espaço disponível */
+    max-width: 50%; /* Limita largura máxima a 50% do container pai */
+}
+
+/* Estilos do título h3 das informações de contato */
+.contato-info h3 {
+    font-size: 42px; /* Define tamanho da fonte como 42 pixels */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+}
+
+/* Estilos dos subtítulos h4 das informações de contato */
+.contato-info h4 {
+    font-size: 24px; /* Define tamanho da fonte como 24 pixels */
+    margin-bottom: 10px; /* Adiciona margem inferior de 10px */
+}
+
+.contato-info p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Estilos da div do formulário de contato */
+.contato-form {
+    flex: 1; /* Permite que o elemento cresça e ocupe espaço disponível */
+    max-width: 50%; /* Limita largura máxima a 50% do container pai */
+    background-color: white; /* Define cor de fundo como branco */
+    padding: 40px; /* Adiciona espaço interno de 40px em todas as direções */
+    border-radius: 20px; /* Cria bordas arredondadas com raio de 20px */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Cria sombra suave: sem deslocamento horizontal, 4px vertical, desfoque de 15px */
+}
+
+/* Estilos do formulário interno */
+.contato-form form {
+    display: flex; /* Transforma em container flexível */
+    flex-direction: column; /* Organiza elementos em coluna vertical */
+}
+
+/* Estilos das labels (rótulos) do formulário */
+.contato-form label {
+    font-size: 18px; /* Define tamanho da fonte como 18 pixels */
+    font-weight: bold; /* Define texto em negrito */
+    color: rgb(0, 108, 75); /* Define cor do texto como verde */
+    margin-bottom: 8px; /* Adiciona margem inferior de 8px */
+    margin-top: 20px; /* Adiciona margem superior de 20px */
+}
+
+/* Remove margem superior da primeira label */
+.contato-form label:first-of-type {
+    margin-top: 0; /* Remove margem superior da primeira label */
+}
+
+/* Estilos dos campos de input e textarea */
+.contato-form input,
+.contato-form textarea {
+    padding: 15px; /* Adiciona espaço interno de 15px em todas as direções */
+    border: 2px solid rgb(200, 200, 200); /* Cria borda sólida cinza de 2px */
+    border-radius: 10px; /* Cria bordas arredondadas com raio de 10px */
+    font-size: 16px; /* Define tamanho da fonte como 16 pixels */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define família de fontes */
+    margin-bottom: 10px; /* Adiciona margem inferior de 10px */
+    transition: border-color 0.3s ease; /* Cria transição suave na cor da borda por 0.3 segundos */
+}
+
+/* Estilos dos campos quando estão em foco (clicados/selecionados) */
+.contato-form input:focus,
+.contato-form textarea:focus {
+    outline: none; /* Remove o contorno padrão do navegador */
+    border-color: rgb(0, 108, 75); /* Muda a cor da borda para verde quando em foco */
+}
+
+/* Estilos específicos do textarea (área de texto) */
+.contato-form textarea {
+    height: 120px; /* Define altura fixa de 120px */
+}
+
+/* Estilos do botão de envio do formulário */
+.submit-button {
+    background-color: rgb(0, 108, 75); /* Define cor de fundo verde */
+    color: white; /* Define cor do texto como branco */
+    padding: 20px 40px; /* Adiciona espaço interno: 20px vertical, 40px horizontal */
+    border: none; /* Remove borda padrão */
+    border-radius: 30px; /* Cria bordas arredondadas com raio de 30px */
+    font-size: 18px; /* Define tamanho da fonte como 18 pixels */
+    font-weight: bold; /* Define texto em negrito */
+    margin-top: 20px; /* Adiciona margem superior de 20px */
+    transition: background-color 0.3s ease; /* Cria transição suave na cor de fundo por 0.3 segundos */
+}
+
+/* Efeito hover do botão de envio */
+.submit-button:hover {
+    background-color: rgb(114, 62, 36); /* Muda cor de fundo para marrom ao passar o mouse */
+}
+
+
+
+
